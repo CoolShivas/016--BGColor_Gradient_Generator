@@ -143,6 +143,11 @@
         accessFirstBtn.innerHTML = rgb_01;
       });
 
+
+      //////-----------------------------------------------------------------------------------------------------
+
+
+
       accessSecondBtn.addEventListener("click", () => {
         // console.log("Second Btn Click"); // Second Btn Click
 
@@ -158,6 +163,17 @@
 
         // // // Changing the text of second btn as per hexaDeciValFun;
         accessSecondBtn.innerHTML = rgb_02;
+      });
+
+
+
+      //////-----------------------------------------------------------------------------------------------------
+
+
+
+      accessCopyCode.addEventListener("click", () => {
+        // // // With the help of navigator and clipboard we can read, write the text;
+        navigator.clipboard.writeText(accessCopyCode.innerText);
       });
 
       /*// // // Ending of firing the event listener on click button.*/
