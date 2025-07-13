@@ -72,6 +72,10 @@
       </div>
     </center>
     <script>
+      
+      let rgb_01;
+      let rgb_02;
+
       /*// // // Starting of accessing the id's and classes by it's name.*/
 
       let accessFirstBtn = document.getElementById("myButton");
@@ -92,12 +96,12 @@
         // // Actually, we want the hexa color code. So, we have to iterate through the hexaDeciValue to get the hexa color code to generate on every click;
         let hexaDeciValue = "0123456789abcdef"; // Declare the Hexa-Decimal Number;
         let symbol = "#";
-        for(let i = 0; i < 6; i++){
+        for (let i = 0; i < 6; i++) {
           // console.log(i);
 
           // // Wanted the random number from the hexaDeciValue;
           // console.log(Math.random()); // 0.4650936625490387
-          
+
           // // Wanted the number from 0 to 15 i.e, why we used Math.random() * 16;
           // console.log(Math.random() * 16); // 15.523150059521148
 
@@ -112,7 +116,7 @@
         console.log(symbol);
         // // Whichever button we click we get the hexa-decimal value;
         // // #a9fc42
-        return(symbol);
+        return symbol;
       };
 
       /*// // // Ending of writing function to generate hexa-digits.*/
@@ -125,8 +129,9 @@
         // console.log("First Btn Click"); // First Btn Click
 
         // hexaDeciValFun(); // Calling the function here;
-        let rgb_01 = hexaDeciValFun();
+        rgb_01 = hexaDeciValFun();
         document.body.style.backgroundImage = `linear-gradient(to right, ${rgb_01}, #444)`;
+        // // Here, I want to use the ${rgb_02} instead of #444; But, due to let variable having block scope that's why we are unable to use outside the block scope; We have to define outside the function;
       });
 
       accessSecondBtn.addEventListener("click", () => {
@@ -134,8 +139,9 @@
 
         // hexaDeciValFun(); // Calling the function here;
 
-        let rgb_02 = hexaDeciValFun();
+        rgb_02 = hexaDeciValFun();
         document.body.style.backgroundImage = `linear-gradient(to right, #001, ${rgb_02})`;
+        // // Here, I want to use the ${rgb_01} instead of #001; But, due to let variable having block scope that's why we are unable to use outside the block scope; We have to define outside the function;
       });
 
       /*// // // Ending of firing the event listener on click button.*/
