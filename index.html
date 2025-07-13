@@ -72,8 +72,8 @@
       </div>
     </center>
     <script>
-      let rgb_01;
-      let rgb_02;
+      let rgb_01 = "#004773"; // Setting the default color instead of undefined;
+      let rgb_02 = "#54d542"; // Setting the default color instead of undefined;
 
       /*// // // Starting of accessing the id's and classes by it's name.*/
 
@@ -137,8 +137,7 @@
         // // Now, able to use the rgb_01 here;
 
         // // // Changing the div code as per the color code according to hexaDeciValFun reflect it on screen for copy purpose;
-        accessCopyCode.innerHTML = `background-image: linear-gradient(to right, ${rgb_01}, rgb(152,
-        63, 198))`;
+        accessCopyCode.innerHTML = `background-image: linear-gradient(to right, ${rgb_01}, ${rgb_02})`;
 
         // // // Changing the text of first btn as per hexaDeciValFun;
         accessFirstBtn.innerHTML = rgb_01;
