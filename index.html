@@ -91,19 +91,20 @@
       const hexaDeciValFun = () => {
         // // Actually, we want the hexa color code. So, we have to iterate through the hexaDeciValue to get the hexa color code to generate on every click;
         let hexaDeciValue = "0123456789abcdef"; // Declare the Hexa-Decimal Number;
-        for (
-          let i = 0;
-          i < 6;
-          i++ // We want the hexa i.e, 6 digits from hexaDeciValue;
-        ) {
-          console.log(i);
-          // // Here, we get the Output on both whichever btn clicks:-
-          // // 0
-          // // 1
-          // // 2
-          // // 3
-          // // 4
-          // // 5
+        for(let i = 0; i < 6; i++){
+          // console.log(i);
+
+          // // Wanted the random number from the hexaDeciValue;
+          // console.log(Math.random()); // 0.4650936625490387
+          
+          // // Wanted the number from 0 to 15 i.e, why we used Math.random() * 16;
+          // console.log(Math.random() * 16); // 15.523150059521148
+
+          // // Wanted to round up the number or not want fraction value;
+          // console.log(Math.floor(Math.random() * 16)); // 14
+
+          console.log(hexaDeciValue[Math.floor(Math.random() * 16)]);
+          // // Finally, we are getting the generated the hexa number from 0 to f;
         }
       };
 
