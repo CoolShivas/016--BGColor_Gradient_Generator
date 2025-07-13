@@ -72,15 +72,30 @@
       </div>
     </center>
     <script>
-        /*// // // Starting of accessing the id's and classes by it's name.*/
+      /*// // // Starting of accessing the id's and classes by it's name.*/
 
-        let accessFirstBtn = document.getElementById("myButton");
-        console.log(accessFirstBtn); // <button id="myButton">#051937</button>
+      let accessFirstBtn = document.getElementById("myButton");
+      console.log(accessFirstBtn); // <button id="myButton">#051937</button>
 
-        let accessSecondBtn = document.getElementById("myButton2");
-        console.log(accessSecondBtn); // <button id="myButton2">#008793</button>
+      let accessSecondBtn = document.getElementById("myButton2");
+      console.log(accessSecondBtn); // <button id="myButton2">#008793</button>
 
-        /*// // // Ending of accessing the id's and classes by it's name.*/
+      /*// // // Ending of accessing the id's and classes by it's name.*/
+
+      //////---------------------------------------------------------------------------------------------///////
+
+      /*// // // Starting of firing the event listener on click button.*/
+      
+      accessFirstBtn.addEventListener('click', () => {
+        console.log("First Btn Click");
+      });
+
+      accessSecondBtn.addEventListener('click', () => {
+        console.log("Second Btn Click");
+      });
+
+      /*// // // Ending of firing the event listener on click button.*/
+
     </script>
   </body>
 </html>
