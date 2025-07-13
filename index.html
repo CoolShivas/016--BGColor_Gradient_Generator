@@ -84,50 +84,48 @@
 
       //////---------------------------------------------------------------------------------------------///////
 
+      /*// // // Starting of writing function to generate hexa-digits.*/
+
+      /*// // // Writing the reusable function code for both the buttons.*/
+
+      const hexaDeciValFun = () => {
+        // // Actually, we want the hexa color code. So, we have to iterate through the hexaDeciValue to get the hexa color code to generate on every click;
+        let hexaDeciValue = "0123456789abcdef"; // Declare the Hexa-Decimal Number;
+        for (
+          let i = 0;
+          i < 6;
+          i++ // We want the hexa i.e, 6 digits from hexaDeciValue;
+        ) {
+          console.log(i);
+          // // Here, we get the Output on both whichever btn clicks:-
+          // // 0
+          // // 1
+          // // 2
+          // // 3
+          // // 4
+          // // 5
+        }
+      };
+
+      /*// // // Ending of writing function to generate hexa-digits.*/
+
+      //////---------------------------------------------------------------------------------------------///////
+
       /*// // // Starting of firing the event listener on click button.*/
-      
-      accessFirstBtn.addEventListener('click', () => {
+
+      accessFirstBtn.addEventListener("click", () => {
         console.log("First Btn Click"); // First Btn Click
 
-        // // Actually, we want the hexa color code. So, we have to iterate through the hexaDeciValue to get the hexa color code to generate on every click;
-        let hexaDeciValue = "0123456789abcdef"; // Declare the Hexa-Decimal Number;
-        for(let i = 0; i < 6; i++) // We want the hexa i.e, 6 digits from hexaDeciValue;
-        {
-          console.log(i); 
-          // // Here, we get the Output :-
-          // // First Btn Click
-          // // 0
-          // // 1
-          // // 2
-          // // 3
-          // // 4
-          // // 5
-        }
-
+        hexaDeciValFun(); // Calling the function here;
       });
 
-      accessSecondBtn.addEventListener('click', () => {
+      accessSecondBtn.addEventListener("click", () => {
         console.log("Second Btn Click"); // Second Btn Click
 
-        // // Actually, we want the hexa color code. So, we have to iterate through the hexaDeciValue to get the hexa color code to generate on every click;
-        let hexaDeciValue = "0123456789abcdef"; // Declare the Hexa-Decimal Number;
-        for(let i = 0; i < 6; i++) // We want the hexa i.e, 6 digits from hexaDeciValue;
-        {
-          console.log(i); 
-          // // Here, we get the Output :-
-          // // Second Btn Click
-          // // 0
-          // // 1
-          // // 2
-          // // 3
-          // // 4
-          // // 5
-        }
-        
+        hexaDeciValFun(); // Calling the function here;
       });
 
       /*// // // Ending of firing the event listener on click button.*/
-
     </script>
   </body>
 </html>
