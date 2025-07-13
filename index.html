@@ -72,7 +72,6 @@
       </div>
     </center>
     <script>
-      
       let rgb_01;
       let rgb_02;
 
@@ -130,8 +129,9 @@
 
         // hexaDeciValFun(); // Calling the function here;
         rgb_01 = hexaDeciValFun();
-        document.body.style.backgroundImage = `linear-gradient(to right, ${rgb_01}, #444)`;
+        document.body.style.backgroundImage = `linear-gradient(to right, ${rgb_01}, ${rgb_02})`;
         // // Here, I want to use the ${rgb_02} instead of #444; But, due to let variable having block scope that's why we are unable to use outside the block scope; We have to define outside the function;
+        // // Now, able to use the rgb_01 here;
       });
 
       accessSecondBtn.addEventListener("click", () => {
@@ -140,8 +140,9 @@
         // hexaDeciValFun(); // Calling the function here;
 
         rgb_02 = hexaDeciValFun();
-        document.body.style.backgroundImage = `linear-gradient(to right, #001, ${rgb_02})`;
+        document.body.style.backgroundImage = `linear-gradient(to right, ${rgb_01}, ${rgb_02})`;
         // // Here, I want to use the ${rgb_01} instead of #001; But, due to let variable having block scope that's why we are unable to use outside the block scope; We have to define outside the function;
+        // // Now, able to use the rgb_02 here;
       });
 
       /*// // // Ending of firing the event listener on click button.*/
