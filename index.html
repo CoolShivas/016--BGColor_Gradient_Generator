@@ -112,6 +112,7 @@
         console.log(symbol);
         // // Whichever button we click we get the hexa-decimal value;
         // // #a9fc42
+        return(symbol);
       };
 
       /*// // // Ending of writing function to generate hexa-digits.*/
@@ -121,15 +122,20 @@
       /*// // // Starting of firing the event listener on click button.*/
 
       accessFirstBtn.addEventListener("click", () => {
-        console.log("First Btn Click"); // First Btn Click
+        // console.log("First Btn Click"); // First Btn Click
 
-        hexaDeciValFun(); // Calling the function here;
+        // hexaDeciValFun(); // Calling the function here;
+        let rgb_01 = hexaDeciValFun();
+        document.body.style.backgroundImage = `linear-gradient(to right, ${rgb_01}, #444)`;
       });
 
       accessSecondBtn.addEventListener("click", () => {
-        console.log("Second Btn Click"); // Second Btn Click
+        // console.log("Second Btn Click"); // Second Btn Click
 
-        hexaDeciValFun(); // Calling the function here;
+        // hexaDeciValFun(); // Calling the function here;
+
+        let rgb_02 = hexaDeciValFun();
+        document.body.style.backgroundImage = `linear-gradient(to right, #001, ${rgb_02})`;
       });
 
       /*// // // Ending of firing the event listener on click button.*/
