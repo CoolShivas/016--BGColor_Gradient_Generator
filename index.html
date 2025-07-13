@@ -83,6 +83,9 @@
       let accessSecondBtn = document.getElementById("myButton2");
       console.log(accessSecondBtn); // <button id="myButton2">#008793</button>
 
+      let accessCopyCode = document.querySelector(".copyCode");
+      console.log(accessCopyCode); // <div class="copyCode"></div>
+
       /*// // // Ending of accessing the id's and classes by it's name.*/
 
       //////---------------------------------------------------------------------------------------------///////
@@ -132,6 +135,11 @@
         document.body.style.backgroundImage = `linear-gradient(to right, ${rgb_01}, ${rgb_02})`;
         // // Here, I want to use the ${rgb_02} instead of #444; But, due to let variable having block scope that's why we are unable to use outside the block scope; We have to define outside the function;
         // // Now, able to use the rgb_01 here;
+
+
+        // // // Changing the div code as per the color code according to hexaDeciValFun reflect it on screen for copy purpose;
+        accessCopyCode.innerHTML = `background-image: linear-gradient(to right, ${rgb_01}, rgb(152,
+        63, 198))`;
       });
 
       accessSecondBtn.addEventListener("click", () => {
@@ -143,6 +151,10 @@
         document.body.style.backgroundImage = `linear-gradient(to right, ${rgb_01}, ${rgb_02})`;
         // // Here, I want to use the ${rgb_01} instead of #001; But, due to let variable having block scope that's why we are unable to use outside the block scope; We have to define outside the function;
         // // Now, able to use the rgb_02 here;
+        
+
+        // // // Changing the div code as per the color code according to hexaDeciValFun reflect it on screen for copy purpose;
+        accessCopyCode.innerHTML = `background-image: linear-gradient(to right, ${rgb_01}, ${rgb_02})`;
       });
 
       /*// // // Ending of firing the event listener on click button.*/
