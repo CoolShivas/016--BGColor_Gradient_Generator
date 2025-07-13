@@ -1,20 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BgColor</title>
-</head>
-<body>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        width: 100%;
+        height: 100vh;
+        background-color: rgb(124, 98, 48);
+        background-image: linear-gradient(
+          to right top,
+          #051937,
+          #004d7a,
+          #008793,
+          #00bf72,
+          #a8eb12
+        );
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      #myButton {
+        padding: 1rem;
+        border-radius: 40%;
+        background-color: rgb(105, 236, 105);
+        font-size: medium;
+        font-weight: 700;
+        cursor: pointer;
+      }
+
+      #myButton2 {
+        padding: 1rem;
+        border-radius: 40%;
+        background-color: rgb(88, 174, 220);
+        font-size: medium;
+        font-weight: 700;
+        cursor: pointer;
+      }
+
+      .copyCode {
+        color: white;
+        font-weight: 800;
+        font-size: large;
+        cursor: pointer;
+      }
+
+      .codeHere {
+        padding: 1rem;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
     <center>
-        <div>
-            <button id="myButton">#051937</button>
-            <button id="myButton2">#008793</button>
-        </div>
-        <h2 class="codeHere">Copy your code here</h2>
-        <div class="copyCode">
-            background-image: linear-gradient(to right, rgb(92, 145, 229), rgb(152, 63, 198));
-        </div>
+      <div>
+        <button id="myButton">#051937</button>
+        <button id="myButton2">#008793</button>
+      </div>
+      <h2 class="codeHere">Copy your code here</h2>
+      <div class="copyCode">
+        background-image: linear-gradient(to right, rgb(92, 145, 229), rgb(152,
+        63, 198));
+      </div>
     </center>
-</body>
+  </body>
 </html>
